@@ -1,0 +1,168 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(174, 199, 253);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  max-inline-size: 21rem;
+  height: auto;
+  margin: auto;
+}
+
+.layout {
+  inline-size: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  background:whitesmoke;
+}
+
+.cover img {
+  inline-size: 100%;
+  vertical-align: middle;
+  block-size: auto;
+}
+
+.layout-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.layout-details--text {
+  margin-inline: 1rem;
+}
+
+.layout-details h3{
+  margin-block-start: 2rem;
+  margin-block-end: .75rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.layout-details p{
+  font-size: .85rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: rgba(151, 149, 149, 0.979);
+  text-align: center;
+  /* margin-block-start: 0; */
+}
+
+.layout-plan {
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  min-inline-size: 18rem;
+  max-inline-size: 25rem;
+  max-block-size: 3.37rem;
+  margin: 15px auto;
+  padding: 1rem;
+  background-color: rgb(238, 239, 248);
+  border-radius: .5rem;
+  /* box-shadow: 0 4px 8px rgb(0 0 0 / 16%) */
+  box-shadow: 0 5px 8px rgb(0 0 0 / 4%);
+  align-items: center;
+}
+
+
+.layout-plan--icon .icon-music {
+    display: inline-block;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    /* margin-bottom: 10px; */
+    background-image: url('./images/icon-music.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.layout-plan--price h6 {
+  color: rgb(124, 124, 124);
+  margin: 0;
+  line-height: 1rem;
+}
+
+.layout-plan--price h5 {
+  margin: 0;
+  color: rgb(100, 100, 100);
+  line-height: 1rem;
+}
+
+.layout-plan--link {
+  margin-inline-start: 3.5rem;
+  font-size: .75rem;
+  justify-content: center;
+}
+
+.layout-plan--link a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.layout-payment {
+  width: 90%;
+  min-inline-size: 18rem;
+  max-inline-size: 25rem;
+  max-block-size: 9.37rem;
+  margin: 15px auto;
+  padding: 1rem;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(59, 17, 245);
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 6px 22px rgb(59 17 245 / 36%);
+  align-items: center;
+}
+
+.layout-payment:hover {
+  cursor: pointer;
+  background-color: rgb(119, 91, 245);
+  box-shadow: 0 6px 22px rgb(119 91 245 / 36%);
+}
+
+.layout-payment--cancel {
+  width: 90%;
+  min-inline-size: 8rem;
+  max-inline-size: 9rem;
+  max-block-size: 3rem;
+  margin: 1rem auto;
+  margin-block-start: -.25rem;
+  padding: 1rem;
+  color: rgb(83, 83, 83);
+  font-weight: bolder;
+  background-color:transparent;
+  border: none;
+  border-radius: .5rem;
+}
+
+.layout-payment--cancel:hover {
+  cursor: pointer;
+  color: black;
+}
